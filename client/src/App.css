@@ -1,0 +1,391 @@
+.remove-bt {
+  margin-right: 0.5rem;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1000ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-acive {
+  opacity: 0.01;
+  transition: opacity 1000ms ease-in;
+}
+/*end boiler plate*/
+
+@import url("https://fonts.googleapis.com/css?family=Passion+One|Raleway&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.85em;
+}
+
+.container.main {
+  padding-bottom: 150px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Passion One", cursive;
+}
+
+.allCaps {
+  text-transform: uppercase;
+}
+
+h1.allCaps {
+  padding-top: 20px;
+}
+
+.bg-dark {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #363636;
+  background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#444444),
+    to(#222222)
+  );
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);
+  background-repeat: repeat-x;
+  border-color: #222222 #222222 #000000;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border-bottom: #dc4c16 10px solid;
+}
+
+.saleList:nth-child(odd),
+div.list-group[data-category] div:nth-child(odd),
+.list-group-item:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+ul.details li div.form-group:nth-child(odd) {
+  background-color: transparent;
+}
+.topNavLinks a.nav-link {
+  color: #fff;
+}
+
+ul.details .form-group {
+  background-color: transparent;
+}
+
+label {
+  text-align: left;
+}
+
+/*checkbox attributes*/
+/* The container */
+.labelContainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.labelContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the checkbox is checked, add a darke gvrey background */
+.labelContainer input:checked ~ .checkmark {
+  background-color: #666666;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.labelContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.labelContainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input[text],
+textarea,
+select,
+.form-control,
+button.btn,
+.list-group-item:first-child {
+  border-radius: 0px;
+}
+
+a:link,
+a,
+a:hover,
+a:active,
+.list-group-item[data-timestamp]:hover {
+  color: #dc4c16;
+  cursor: pointer;
+}
+
+.list-group-item {
+  color: #212529;
+  border-width: 0px;
+}
+a.list-group-item:hover {
+  color: #dc4c16;
+}
+
+.btn {
+  border-radius: 4px;
+  box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset,
+    0px 1px 2px rgba(0, 0, 0, 0.05);
+  min-height: 16px;
+}
+
+.btn-secondary {
+  /*background-image: -moz-linear-gradient(top, #444444, #222222);
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#444444),
+    to(#222222)
+  );
+  background-image: -webkit-linear-gradient(top, #444444, #222222);
+  background-image: -o-linear-gradient(top, #444444, #222222);
+  background-image: linear-gradient(to bottom, #444444, #222222);*/
+  background-color: #444444;
+
+  color: #ffffff !important;
+  border: 0px;
+}
+
+.btn-secondary:hover,
+.btn-secondary.active {
+  /*background-image: -moz-linear-gradient(top, #222222, #444444);
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#222222),
+    to(#444444)
+  );
+  background-image: -webkit-linear-gradient(top, #222222, #444444);
+  background-image: -o-linear-gradient(top, #222222, #444444);
+  background-image: linear-gradient(to bottom, #222222, #444444);
+  background-repeat: repeat-x;*/
+  color: #dc4c16 !important;
+}
+
+.btn-success {
+  /*28a745*/
+  background-image: -moz-linear-gradient(top, #98e6ab, #28a745);
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#98e6ab),
+    to(#28a745)
+  );
+  background-image: -webkit-linear-gradient(top, #98e6ab, #28a745);
+  background-image: -o-linear-gradient(top, #98e6ab, #28a745);
+  background-image: linear-gradient(to bottom, #98e6ab, #28a745);
+  background-repeat: repeat-x;
+  color: #ffffff !important;
+}
+
+button.btn.btn-success:hover,
+button.btn.btn-success:active,
+button.btn.btn-success:focus {
+  /*28a745*/
+  background-image: -moz-linear-gradient(top, #28a745, #98e6ab) !important;
+  background-image: -webkit-gradient(
+    linear,
+    0 0,
+    0 100%,
+    from(#28a745),
+    to(#98e6ab)
+  ) !important;
+  background-image: -webkit-linear-gradient(top, #28a745, #98e6ab) !important;
+  background-image: -o-linear-gradient(top, #28a745, #98e6ab) !important;
+  background-image: linear-gradient(top, #28a745, #98e6ab) !important;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+.loader {
+  border: 16px solid #666565;
+  border-radius: 50%;
+  border-top: 16px solid #333;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.error {
+  border: 1px solid #ff0000;
+}
+
+ul.inline li {
+  display: inline-block;
+}
+
+.topNavLinks {
+  text-align: right;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  line-height: 60px;
+  color: #fff;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+ul.inline {
+  padding-left: 0px;
+}
+
+.modifyDiv ul.inline li {
+  width: 50%;
+}
+
+.navbar-brand img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  margin-left: -18px;
+  margin-top: -33px;
+  position: absolute;
+  z-index: 9;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.noStyle {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.saleList ul.noStyle {
+  padding: 0px 0px 0px 20px;
+}
+
+ul.details,
+.list-group-item[data-timestamp] + div {
+  background-color: #cccccc;
+  font-size: 0.9rem;
+}
+
+.list-group-item[data-timestamp] + div {
+  padding: 10px;
+}
+
+.list-group-item.active {
+  background-color: #cccccc;
+  color: #212529;
+  font-weight: bold;
+  text-decoration: underline;
+  border-color: #ccc;
+}
+
+#salesBar {
+  width: 0%;
+  height: 50px;
+  -webkit-transition: width 1s; /* For Safari 3.1 to 6.0 */
+  transition: all 1s linear;
+}
+
+#searchResults {
+  position: absolute;
+  z-index: 5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*START RESPONSIVE CSS*/
+
+@media (max-width: 768px) {
+  .topNavLinks,
+  .smallCenter {
+    text-align: center;
+  }
+
+  .navbar-brand img {
+    width: 60px;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 0px;
+    position: inherit;
+    z-index: 1;
+  }
+
+  div[data-target] {
+    margin-top: 10px;
+    border-top: 1px solid #999;
+    padding-top: 10px;
+  }
+}
